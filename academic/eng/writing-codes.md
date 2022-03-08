@@ -1,5 +1,4 @@
 ---
-layout: post
 title: English Writing Marking Codes - 簡的後花園網站
 ---
 

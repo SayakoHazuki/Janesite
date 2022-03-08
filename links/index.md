@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 常用連結 - 簡的後花園網站
 ---
 
