@@ -1,5 +1,5 @@
 ---
-title: English Writing Marking Codes - 簡的後花園網站
+title: English Writing Marking Codes
 ---
 
 # English Writing Marking Codes

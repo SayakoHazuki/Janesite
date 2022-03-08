@@ -1,5 +1,5 @@
 ---
-title: 學業相關資訊 - 簡的後花園網站
+title: 學業相關資訊
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
