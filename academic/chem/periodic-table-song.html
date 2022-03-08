@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>簡的後花園 - 元素週期表之歌</title>
+    <style>
+        body {
+            color: #fff;
+            text-align: center;
+            background-color: #159957;
+            background-image: linear-gradient(120deg, #155799, #159957);
+            padding: 0;
+            margin: 0
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0
+        }
+
+        div[center] {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div[vcenter] {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        @media (orientation: portrait) {
+            iframe {
+                width: 100vw;
+                height: calc(100vw / 560 * 315)
+            }
+
+            div[center] {
+                display: none
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-width:1080px) {
+            iframe {
+                width: 100vw;
+                height: 100vh
+            }
+
+            iframe[touch] {
+                display: none
+            }
+
+            div[vcenter] {
+                display: none;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (min-width:1081px) {
+            iframe {
+                width: 60vw;
+                height: calc(60vw / 560 * 315)
+            }
+
+            iframe[touch] {
+                display: none
+            }
+
+            div[vcenter] {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div center>
+        <iframe full src="https://www.youtube.com/embed/rz4Dd1I_fX0" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div vcenter>
+        <iframe touch src="https://www.youtube.com/embed/rz4Dd1I_fX0" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

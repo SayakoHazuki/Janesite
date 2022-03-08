@@ -5,7 +5,7 @@
 ### 中文 Chinese Language
 
 ### 英文 English Language
-- [Writing Marking Codes](https://jane.ml/academic/eng/writingcodes)
+- [Writing Marking Codes](https://jane.ml/academic/eng/writing-codes)
 
 ### 數學 Mathematics
 - [WinMaths](https://url.spyc.hk/winmaths) <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -15,3 +15,5 @@
 ##### 物理 Physics
 - [折射模擬器](https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 - [透鏡/鏡模擬器](https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+##### 化學 Chemistry
+- [元素週期表之歌](https://jane.ml/academic/chem/periodic-table-song)
