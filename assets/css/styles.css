@@ -69,3 +69,19 @@
 .no-hover-underline:hover {
   text-decoration: none !important;
 }
+
+.page-header {
+  display: none;
+}
+
+.footer-banner {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.footer-text {
+  width: 100%;
+  text-align: center;
+}
