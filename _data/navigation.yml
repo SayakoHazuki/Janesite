@@ -1,0 +1,11 @@
+- title: 主頁
+  url: /
+- title: 校歷表
+  url: /cal
+- title: 學術
+  url: /academic
+- title: 常用連結
+  url: /links
+  sublinks:
+    - title: PYCnet
+      url: /links/pycnet
