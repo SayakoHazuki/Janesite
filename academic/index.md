@@ -18,6 +18,7 @@ title: 學業相關資訊
 ### 科學 Science (Phy Chem Bio)
 ##### 物理 Physics
 - [折射模擬器](https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>
-- [透鏡/鏡模擬器](https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+- [透鏡/鏡模擬器](https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>  
+
 ##### 化學 Chemistry
 - [元素週期表之歌](https://jane.ml/academic/chem/periodic-table-song)
