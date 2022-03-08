@@ -1,3 +1,8 @@
+---
+layout: post
+title: English Writing Marking Codes - 簡的後花園網站
+---
+
 # English Writing Marking Codes
 
 Disclaimer: Teachers might have their own style of marking. The follow table lists the common marking codes only.
