@@ -7,7 +7,8 @@ title: 元素週期表
 ![periodic-table](../../assets/i/periodictable.png)
 
 ## 首 20 個元素詳細列表
-(若未能顯示全個表格, 可左右滑動)
+(若未能顯示全個表格, 可左右滑動)  
+
 | Atomic<br/>Number | Symbol |  Element   | Chi.  | Electronic<br/>Arrangement | <span style="color:#00C227">Metal</span>/<br/><span style="color:#C09700">Semi-metal</span>/<br/><span style="color:#FF009A">Non-metal</span> |                  State                   |
 | :---------------: | :----: | :--------: | :---: | :------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: |
 |         1         |   H    |  Hydrogen  |  氫   |             1              |                                                 <span style="color:#FF009A">Non-metal</span>                                                  |  <span style="color:#00CAAA">Gas</span>  |
