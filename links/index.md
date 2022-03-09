@@ -2,8 +2,6 @@
 title: 常用連結
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 # 常用連結 Useful links
 
 - [SPYC Academic Committee 網頁](https://sites.google.com/school.pyc.edu.hk/spyc-academic/) <i class="fa-solid fa-arrow-up-right-from-square"></i>
