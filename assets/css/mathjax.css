@@ -38,3 +38,15 @@ h6.nomargin {
   padding: 0;
   margin: 0;
 }
+
+div[margin-10] {
+  height:10px;
+}
+
+@media screen and (min-width: 800px) {
+  .f-eq-container {
+    margin-left: 2em !important;
+    margin-top: 2em !important;
+  }
+  
+}
