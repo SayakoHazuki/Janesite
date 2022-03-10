@@ -1,0 +1,40 @@
+mjx-container[display="true"]:not(LaTex[margin] > mjx-container) {
+  margin: 0 !important;
+}
+
+.f-container {
+  display: flex;
+  margin-top: 2em !important;
+  margin-bottom: 4em !important;
+}
+
+.f-img-container,
+.f-eq-container {
+  flex: 1 0 40%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .f-img-container img {
+    width: 100%;
+  }
+  .f-container {
+    flex-direction: column;
+  }
+
+  .f-img-container,
+  .f-eq-container {
+    flex: 1 0 100%;
+    margin-top: 2em;
+  }
+
+  .f-eq-container {
+    padding-left: 10%;
+  }
+}
+
+h5.nomargin,
+h6.nomargin {
+  padding: 0;
+  margin: 0;
+}
