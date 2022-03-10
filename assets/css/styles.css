@@ -95,3 +95,40 @@
   min-width: 100%;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 800px), (orientation: portrait) {
+  .showcase-media {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1500px) and (orientation: landscape) {
+  .showcase-media {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (orientation: landscape) {
+  .showcase-media {
+    width: 800px;
+  }
+}
+
+.remarks {
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.remarks .word-fam {
+  color: #666;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.remarks .desc {
+  font-style: italic;
+  font-weight: 400;
+}
