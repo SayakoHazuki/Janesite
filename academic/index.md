@@ -17,6 +17,7 @@ title: 學業相關資訊
 ##### 物理 Physics
 - [折射模擬器](https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 - [透鏡/鏡模擬器](https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>  
+- [公式列表](/academic/phy/formulas)
 
 ##### 化學 Chemistry
 - [元素週期表及首20元素詳細資訊](/academic/chem/periodic-table)
