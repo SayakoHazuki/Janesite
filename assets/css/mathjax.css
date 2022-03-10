@@ -1,13 +1,6 @@
 mjx-container[display="true"]:not(LaTex[margin] > mjx-container) {
   margin: 0 !important;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
-
-.f-container * {
-  font-family: "Noto Serif", serif;
-}
-
 .f-container {
   display: flex;
   margin-top: 2em !important;
