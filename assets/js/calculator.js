@@ -288,13 +288,20 @@ function init() {
 
   const multichar_ops = [
     "⁻¹",
+    "³√(",
     "√(",
+    "\u231f ",
     "^(",
     "log(",
     "ln(",
+    "sin⁻¹(",
+    "cos⁻¹(",
+    "tan⁻¹(",
     "sin(",
     "cos(",
     "tan(",
+    "Abs(",
+    "Ran#",
     "Ans",
   ];
 
