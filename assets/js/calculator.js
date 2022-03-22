@@ -156,21 +156,39 @@ function init() {
         return formula_input_num(this);
       }
       equation =
+        equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
+      equation =
         equation === "" ? `0${$(this).text()}` : equation + $(this).text();
       dispMain(equation);
     });
   }
-  for (const operator of [operators.plus, operators.minus]) {
+  for (const operator of [operators.plus]) {
     operator.click(function () {
       if (formula_mode === 1) {
         return formula_input_num(this);
       }
       equation =
+        equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
+      equation =
         equation === ""
           ? `0${$(this).text()}`
-          : equation.endsWith("÷") ||
-            equation.endsWith("\u00d7") ||
-            equation.endsWith($(this).text())
+          : equation.endsWith($(this).text())
+          ? equation
+          : equation + $(this).text();
+      dispMain(equation);
+    });
+  }
+  for (const operator of [operators.minus]) {
+    operator.click(function () {
+      if (formula_mode === 1) {
+        return formula_input_num(this);
+      }
+      equation =
+        equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
+      equation =
+        equation === ""
+          ? `${$(this).text()}`
+          : equation.endsWith($(this).text())
           ? equation
           : equation + $(this).text();
       dispMain(equation);
@@ -311,6 +329,8 @@ function init() {
       return formula_input_num(this);
     }
     if (shifted) return shifted_run(this);
+    equation =
+      equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
     equation += "e";
     dispMain(equation);
   });
@@ -400,6 +420,9 @@ function init() {
       if (shifted && ($(this).text() === "x-1" || $(this).text() === "x3")) {
         return shifted_run(this);
       }
+
+      equation =
+        equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
       equation += $(this)
         .text()
         .replace("x", "")
@@ -434,6 +457,8 @@ function init() {
             : equation + alphaed_letter(this);
         return dispMain(equation);
       }
+      equation =
+        equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
       equation += `${$(this).text()}(`;
       dispMain(equation);
     });
@@ -511,8 +536,13 @@ function init() {
       ".": "ran#",
     };
     if ((btn.toString() || "").toLowerCase() in shiftKeys) {
+      function fe() {
+        equation =
+          equation === "" ? (temp_ans === "" ? equation : "Ans") : equation;
+      }
       switch (shiftKeys[btn.toString().toLowerCase()]) {
         case "!":
+          fe();
           equation += "!";
           break;
         case "cbrt":
@@ -534,6 +564,7 @@ function init() {
           equation += "Abs(";
           break;
         case "%":
+          fe();
           equation =
             equation === "0" || equation === "" ? "0%" : equation + "%";
           break;
@@ -592,25 +623,32 @@ const dispMain = (str, fraction_mode = false) => {
   $("#display-main").text(" ");
   setTimeout(() => {
     if (fraction_mode === "d/c") {
-      const { n, d } = math.fraction(str);
+      const { n, d } = math.fraction(math.evaluate(str));
       if (d === 1) {
         $("#display-main").text(dp(str).slice(-13));
       } else {
+        console.log(`${n}${d}`, `${n}${d}`.length);
         if (`${n}${d}`.length >= 12) {
           return $("#display-main").text(str);
         }
         $("#display-main").text(`${n}\u231f ${d}`.slice(-13));
       }
     } else if (fraction_mode === "a b/c") {
-      const { n, d } = math.fraction(str);
+      const { n, d } = math.fraction(math.evaluate(str));
       if (d === 1) {
         $("#display-main").text(dp(str).slice(-13));
       } else {
+        console.log(
+          `${Math.floor(n / d)}${n % d}${d}`,
+          `${Math.floor(n / d)}${n % d}${d}`.length
+        );
         if (`${Math.floor(n / d)}${n % d}${d}`.length >= 11) {
           return $("#display-main").text(str);
         }
         $("#display-main").text(
-          `${Math.floor(n / d)}\u231f ${n % d}\u231f ${d}`.slice(-13)
+          `${Math.floor(n / d) === 0 ? "" : `${Math.floor(n / d)}\u231f `}${
+            n % d
+          }\u231f ${d}`.slice(-13)
         );
       }
     } else {
