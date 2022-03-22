@@ -140,13 +140,15 @@
   background-color: rgb(255, 115, 0);
 }
 
-#cb-prog:hover,
-#cb-fmla:hover {
-  background-color: rgb(255, 165, 92);
-}
+@media screen and (min-width: 600px) {
+  #cb-prog:hover,
+  #cb-fmla:hover {
+    background-color: rgb(255, 165, 92);
+  }
 
-.calc-btn:hover {
-  background-color: #7d7e81;
+  .calc-btn:hover {
+    background-color: #7d7e81;
+  }
 }
 
 #tip-bar {
