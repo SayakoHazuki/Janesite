@@ -1,0 +1,298 @@
+<link rel="stylesheet" href="/assets/css/calculator.css" />
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"
+  integrity="sha512-LZjS5wTUe/SnWUyydnf4voLKfyYDGVqbzdvu+EIQJmaODVUvLO2ha28RAh6KPSlPzdNoo1MFjA/jAAdfpBX4xg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/calculator.js"></script>
+
+<div class="calc-container">
+  <div id="title-bar" class="flex2">
+    <div class="empty flex1"></div>
+    <div id="calc-title" class="flex6">
+      <div class="flex3">Calculator</div>
+      <div class="_08font ita flex1">inspired by</div>
+      <div class="_08font ita flex1">Casio fx-50FH II</div>
+    </div>
+    <div class="empty flex2"></div>
+    <div class="solar-thing flex9"></div>
+    <div class="empty flex2"></div>
+  </div>
+  <div id="title-tip" class="flex1">
+    <div class="empty flex1"></div>
+    <div class="flex14 red-txt one-line">▮▮▮▮▮ PROBABLY BUGGY</div>
+    <div class="flex9 r-align ita one-line">POINTLESS PLUS&nbsp;</div>
+    <div class="empty flex1"></div>
+  </div>
+  <div id="display-bar" class="flex3">
+    <div id="tip-bar" class="on">
+      <div class="empty flex3"></div>
+      <div id="shifted" class="highlight-icon mode-disabled flex2">S</div>
+      <div class="empty flex1"></div>
+      <div id="alphaed" class="highlight-icon mode-disabled flex2">A</div>
+      <div class="empty flex12"></div>
+      <div class="empty flex12"></div>
+      <div class="empty flex12"></div>
+      <div class="empty flex12"></div>
+    </div>
+    <div id="display-top" class="on">888888888888</div>
+    <div id="display-main" class="on">888888888.8</div>
+  </div>
+  <div id="row1" class="flex3">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 shift-shortcut">SHIFT</div>
+      <div class="calc-desctxt flex1 alpha-shortcut">ALPHA</div>
+      <div class="empty flex2"></div>
+      <div class="calc-desctxt flex1">MODE</div>
+      <div class="calc-desctxt flex1">ON</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-shift" class="calc-btn"></div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-alpha" class="calc-btn"></div>
+      </div>
+      <div class="empty flex2"></div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-mode" class="calc-btn disabled"></div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-on" class="calc-btn"></div>
+      </div>
+    </div>
+  </div>
+  <div id="row2" class="flex2">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">EXIT</div>
+      <div class="empty flex3"></div>
+      <div class="calc-desctxt flex1 shift-shortcut">x!</div>
+      <div class="calc-desctxt flex1 shift-shortcut">∛</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-prog" id="cb-prog" class="calc-btn disabled">
+          <span class="txt08">Prog</span>
+        </div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-fmla" id="cb-fmla" class="calc-btn">
+          <span class="txt08">FMLA</span>
+        </div>
+      </div>
+      <div class="empty flex2"></div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-x-1" class="calc-btn">x<sup>-1</sup></div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-x3" class="calc-btn">x<sup>3</sup></div>
+      </div>
+    </div>
+  </div>
+  <div id="row3" class="flex2">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 shift-shortcut">d/c</div>
+      <div class="empty flex2"></div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">
+        <sup>x</sup>√
+      </div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">
+        10<sup>x</sup>
+      </div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">
+        e<sup>x</sup>
+      </div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-ab_c" class="calc-btn">
+          a<sup>b</sup>&frasl;<sub>c</sub>
+        </div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-sqrt" class="calc-btn">√</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-x2" class="calc-btn">x<sup>2</sup></div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-sup" class="calc-btn">^</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-log" class="calc-btn">log</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-ln" class="calc-btn">ln</div>
+      </div>
+    </div>
+  </div>
+  <div id="row4" class="flex2">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 alpha-shortcut">A</div>
+      <div class="calc-desctxt flex1 alpha-shortcut">B</div>
+      <div class="calc-desctxt flex1 alpha-shortcut">C</div>
+      <div class="calc-desctxt flex1 shift-shortcut">
+        sin<sup>-1</sup> <span class="alpha-shortcut">D</span>
+      </div>
+      <div class="calc-desctxt flex1 shift-shortcut">cos<sup>-1</sup></div>
+      <div class="calc-desctxt flex1 shift-shortcut">tan<sup>-1</sup></div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-dash" class="calc-btn disabled">(ー)</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-punc" class="calc-btn disabled">。，</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-hyp" class="calc-btn disabled">hyp</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-sin" class="calc-btn">sin</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-cos" class="calc-btn">cos</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-tan" class="calc-btn">tan</div>
+      </div>
+    </div>
+  </div>
+  <div id="row4" class="flex2">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">STO</div>
+      <div class="empty flex1"></div>
+      <div class="calc-desctxt flex1 shift-shortcut">%</div>
+      <div class="calc-desctxt flex1 shift-shortcut">Abs</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">；</div>
+      <div class="calc-desctxt flex1">
+        <span class="not-implemented shift-shortcut">M-</span>
+        <span class="alpha-shortcut">M</span>
+      </div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-rcl" class="calc-btn disabled">RCL</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-eng" class="calc-btn disabled">ENG</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-paren1" class="calc-btn">(</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-paren2" class="calc-btn">)</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-comma" class="calc-btn disabled">，</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-Mplus" class="calc-btn disabled">M+</div>
+      </div>
+    </div>
+  </div>
+  <div id="row6" class="flex3">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">CONST</div>
+      <div class="empty flex1"></div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">CLR</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">INS</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">OFF</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-7" class="calc-btn">7</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-8" class="calc-btn">8</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-9" class="calc-btn">9</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-del" class="calc-btn red-txt">DEL</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-ac" class="calc-btn red-txt">AC</div>
+      </div>
+    </div>
+  </div>
+  <div id="row7" class="flex3">
+    <div class="calc-desctxt-row">
+      <div class="empty flex3"></div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">nPr</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">nCr</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-4" class="calc-btn">4</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-5" class="calc-btn">5</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-6" class="calc-btn">6</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-multiply" class="calc-btn">&times;</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-divide" class="calc-btn">÷</div>
+      </div>
+    </div>
+  </div>
+  <div id="row8" class="flex3">
+    <div class="calc-desctxt-row">
+      <div class="empty flex3"></div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">Pol</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">Rec</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-1" class="calc-btn">1</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-2" class="calc-btn">2</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-3" class="calc-btn">3</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-plus" class="calc-btn">+</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-minus" class="calc-btn">-</div>
+      </div>
+    </div>
+  </div>
+  <div id="row8" class="flex3">
+    <div class="calc-desctxt-row">
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">Rnd</div>
+      <div class="calc-desctxt flex1 shift-shortcut">Ran#</div>
+      <div class="calc-desctxt flex1 shift-shortcut">&pi;</div>
+      <div class="calc-desctxt flex1 not-implemented shift-shortcut">
+        DRG&blacktriangleright;
+      </div>
+      <div class="empty flex1"></div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-btn-container flex1">
+        <div id="cb-0" class="calc-btn">0</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-dp" class="calc-btn">.</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-exp" class="calc-btn">EXP</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-ans" class="calc-btn">Ans</div>
+      </div>
+      <div class="calc-btn-container flex1">
+        <div id="cb-exe" class="calc-btn">EXE</div>
+      </div>
+    </div>
+  </div>
+</div>
