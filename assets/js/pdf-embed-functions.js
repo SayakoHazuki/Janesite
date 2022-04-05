@@ -1,7 +1,15 @@
 function gotoPage(page = 0) {
   page = isNaN(page) ? 0 : page;
-  if (!adobeAPIs) return;
-  adobeAPIs.gotoLocation(page, 0, 0).catch((error) => console.log(error));
+  if (!adobeAPIs) {
+    goto_page_onload = page;
+    $("#pdf-frame").get(0).scrollIntoView(false);
+  }
+  adobeAPIs
+    .gotoLocation(page, 0, 0)
+    .then(() => {
+      $("#pdf-frame").get(0).scrollIntoView(false);
+    })
+    .catch((error) => console.log(error));
 }
 
 for (const element of $(".pdf-goto-page")) {

@@ -9,6 +9,7 @@
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script type="text/javascript">
         var adobeAPIs;
+        var goto_page_onload = false;
         document.addEventListener("adobe_dc_view_sdk.ready", function () {
             var adobeDCView = new AdobeDC.View({
                 clientId: "{{creds}}",
@@ -23,6 +24,9 @@
             );
             previewFilePromise.then((adobeViewer) => {
                 adobeViewer.getAPIs().then((apis) => {
+                    if (goto_page_onload) {
+                        apis.gotoLocation(goto_page_onload, 0, 0)
+                    }
                     adobeAPIs = apis;
                 });
             });

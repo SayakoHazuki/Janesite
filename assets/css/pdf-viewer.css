@@ -16,3 +16,13 @@
 a.pdf-goto-page {
     cursor: pointer;
 }
+
+span.pdf-page-num {
+    color: lightslategray;
+    font-style: italic;
+}
+
+#pdf-table-of-contents {
+    max-height: 60vh;
+    overflow-y: scroll;
+}
