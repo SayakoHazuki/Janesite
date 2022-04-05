@@ -41,6 +41,6 @@ title: 學業相關連結
 - [元素週期表及首 20 元素詳細資訊](/academic/chem/periodic-table)
 - [元素週期表之歌](/academic/chem/periodic-table-song)
 
-### 其他連結 Other linkks
+### 其他連結 Other links
 
 - [校歷表](/academic/cal)
