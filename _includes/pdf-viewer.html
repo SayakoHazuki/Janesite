@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/assets/css/pdf-viewer.css" />
+{% assign creds = nil %}
+{% if site.url == 'http://localhost:4000' %}
+{% assign creds = 'ce34ea3bbb914992bc136dbae325969e' %} 
+{% else %} 
+{% assign creds = 'acb50a420eb5400dae1ce71711591bec' %} 
+{% endif %} 
+<div id="pdf-frame">
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+        var adobeAPIs;
+        document.addEventListener("adobe_dc_view_sdk.ready", function () {
+            var adobeDCView = new AdobeDC.View({
+                clientId: "{{creds}}",
+                divId: "pdf-frame",
+            });
+            var previewFilePromise = adobeDCView.previewFile(
+                {
+                    content: { location: { url: "{{site.url}}{{page.pdf_path}}" } },
+                    metaData: { fileName: "{{page.pdf_fname}}" },
+                },
+                { embedMode: "SIZED_CONTAINER" }
+            );
+            previewFilePromise.then((adobeViewer) => {
+                adobeViewer.getAPIs().then((apis) => {
+                    adobeAPIs = apis;
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript" src="/assets/js/pdf-embed-functions.js"></script>
+</div>
