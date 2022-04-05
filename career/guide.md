@@ -38,7 +38,7 @@ pdf_fname: 高中選科及升學指南2022_電子書.pdf
 香港建造學院、勞工處「展翅青見計劃」P.62 <span class="pdf-page-num">(PDF P.<a class="pdf-goto-page" id="pdf-to-64">64</a>)</span>  <br/>
 僱員再培訓局青年培訓課程、製衣業訓練局 P.63 <span class="pdf-page-num">(PDF P.<a class="pdf-goto-page" id="pdf-to-64">64</a>)</span>  <br/>
 學徒及見習訓練計劃一覽 P.64-68 <span class="pdf-page-num">(PDF P.<a class="pdf-goto-page" id="pdf-to-66">66</a>-<a class="pdf-goto-page" id="pdf-to-70">70</a>)</span>  <br/>
-學徒經驗分享 P.69-? <span class="pdf-page-num">(PDF P.<a class="pdf-goto-page" id="pdf-to-71">71</a>-<a class="pdf-goto-page" id="pdf-to-73">73</a>)</span>  <br/>
+學徒經驗分享 P.69-71 <span class="pdf-page-num">(PDF P.<a class="pdf-goto-page" id="pdf-to-71">71</a>-<a class="pdf-goto-page" id="pdf-to-73">73</a>)</span>  <br/>
 </p>
 <p style="color:gray;font-style:italic;">轉載自 升學就業輔導組 沙培網訊息 (M130)</p>
 </div>
