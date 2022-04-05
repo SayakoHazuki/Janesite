@@ -1,14 +1,25 @@
 ---
-title: 學業相關資訊
+title: 學業相關連結
 ---
 
-# 學業相關資訊
+# 學業相關連結
 
+<div class="w3-panel w3-border w3-light-grey w3-round-large">
+<div class="pad-1rem"></div>
+  <p class="no-top-pad">需要登入的連結以 <i class="fa-brands fa-google"></i> 標示<br/>外部連結以 <i class="fa-solid fa-arrow-up-right-from-square"></i> 標示</p>
+</div>
 ### 中文 Chinese Language
+
+- [沙培中文科網頁](https://sites.google.com/view/spycchin) <i class="fa-brands fa-google"></i> <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
 ### 英文 English Language
 
+- [SPYC English Website](https://sites.google.com/school.pyc.edu.hk/english/home) <i class="fa-brands fa-google"></i> <i class="fa-solid fa-arrow-up-right-from-square"></i>
 - [Writing Marking Codes](/academic/eng/writing-codes)
+- **Recommended self-learning websites**
+  - [BBC Learning English](https://www.bbc.co.uk/learningenglish/) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  - [Readworks](https://www.readworks.org/) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  - [Ted Talks Education](https://www.ted.com/about/programs-initiatives/ted-talks-education/) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
 ### 數學 Mathematics
 
@@ -29,3 +40,7 @@ title: 學業相關資訊
 
 - [元素週期表及首 20 元素詳細資訊](/academic/chem/periodic-table)
 - [元素週期表之歌](/academic/chem/periodic-table-song)
+
+### 其他連結 Other linkks
+
+- [校歷表](/academic/cal)
