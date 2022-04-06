@@ -1,8 +1,21 @@
 ---
 title: 常用連結
+shortcuts:
+  - name: PYCnet
+    url: https://www2.pyc.edu.hk/pycnet/index.php
+    img-url: https://www2.pyc.edu.hk/favicon.ico
+  - name: Google Classroom
+    url: https://classroom.google.com
+    img-url: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_icon.svg/640px-Google_Classroom_icon.svg.png
 ---
 
 # 常用連結 Useful links
+
+#### 捷徑
+
+{% include shortcut.html %}
+
+<hr />
 
 <div class="w3-panel w3-border w3-light-grey w3-round-large">
 <div class="pad-1rem"></div>
@@ -18,7 +31,7 @@ title: 常用連結
 ### 選科資料
 
 - [升學就業輔導組網頁](https://sites.google.com/school.pyc.edu.hk/spyccareers) <i class="fa-brands fa-google"></i> <i class="fa-solid fa-arrow-up-right-from-square"></i>
-- [學友社《高中選科及升學指南 2022》](/career/guide)  
+- [學友社《高中選科及升學指南 2022》](/career/guide)
 
 ### 其他資源
 
