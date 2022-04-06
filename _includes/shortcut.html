@@ -1,0 +1,14 @@
+<div id="shortcuts-container">
+
+    {% for shortcut in page.shortcuts %}
+
+    <a href="{{shortcut.url}}" class="shortcut">
+        <div class="shortcut-img-container">
+            <img src="{{shortcut.img-url}}" alt="{{shortcut.name}}" />
+        </div>
+    </a>
+
+
+    {% endfor %}
+
+</div>
