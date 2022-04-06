@@ -7,10 +7,10 @@ pdf_ratio: "16-9"
 
 # 高中選科資訊
 
-<div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue" id="pdf-table-of-contents">
+<div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
 <div class="pad-1rem"></div>
 <h3 class="no-top-pad">21-22年度中三選科意向表</h3>
-<p> <a target="_blank" href="https://spyc-pycnet.s3.ap-southeast-1.amazonaws.com/circulars/C234_%E6%9C%89%E9%97%9C%E3%80%8C%E4%B8%AD%E4%B8%89%E5%AD%B8%E7%94%9F%E9%81%B8%E7%A7%91%E6%84%8F%E5%90%91%E8%AA%BF%E6%9F%A5%E3%80%8D%E4%BA%8B%E5%AE%9C.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXCAEJUI4RYUPHHNK%2F20220406%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220406T043428Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=455d80e07082ce910d00d8a8edb5f7ea84cac449a94ae2ffdf409f3411cca217" style="text-decoration:underline;color:lightslategray"> (通告 C234/2122) [按此查看通告]</a> <br/>
+<p> <a target="_blank" href="/files/circ/C234.pdf"> (通告 C234/2122) [按此查看通告]</a> <br/>
 因中三級仍實施網課，本年度的選科意向調查改以網上形式進行。<br/>
 <strong>請於 5月27日 或以前填寫意向表。</strong><br/>
 校方安排選修科目時將考慮學生的學業成績、選擇意願以及學校開設的科目組合，請學生認真填寫本意向表 。
