@@ -23,7 +23,6 @@ title: 學業相關連結
 
 ### 數學 Mathematics
 
-- [網上計算機(測試中)](/academic/math/calculator)
 - [WinMaths](https://url.spyc.hk/winmaths) <i class="fa-brands fa-google"></i> <i class="fa-solid fa-arrow-up-right-from-square"></i>
 - [Math Past paper solutions](https://qubank.netlify.app/quzoo) <i class="fa-brands fa-google"></i> <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
