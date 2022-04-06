@@ -20,3 +20,7 @@ for (const element of $(".pdf-goto-page")) {
     gotoPage(target_page);
   });
 }
+
+$(document).ready(function() {
+  $("#pdf-frame.ratio-16-9").height($("#pdf-frame").width() / 16 * 9)
+})

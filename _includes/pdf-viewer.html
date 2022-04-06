@@ -5,7 +5,7 @@
 {% else %} 
 {% assign creds = 'acb50a420eb5400dae1ce71711591bec' %} 
 {% endif %} 
-<div id="pdf-frame">
+<div id="pdf-frame" class="ratio-{{page.pdf_ratio}}">
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script type="text/javascript">
         var adobeAPIs;

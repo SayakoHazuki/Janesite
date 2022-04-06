@@ -1,28 +1,46 @@
 #pdf-frame {
+  border: 1rem solid rgba(0, 0, 0, 0.1);
+}
+
+a.pdf-goto-page {
+  cursor: pointer;
+}
+
+span.pdf-page-num {
+  color: lightslategray;
+  font-style: italic;
+}
+
+#pdf-table-of-contents {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+#pdf-frame.ratio-A4 {
   height: calc(100vh - 52px);
   width: calc((100vh - 52px) / 1.4142);
-  border: 1rem solid rgba(0, 0, 0, 0.1);
   margin-left: calc(50% - ((100vh - 52px) / 1.4142) / 2);
 }
 
-@media screen and (orientation: portrait) {
-  #pdf-frame {
-    width: calc(100% + 2rem);
-    margin-left: calc(0px - 1rem);
+#pdf-frame.ratio-16-9 {
+  width: 100%;
+  margin: 0 0;
+}
+
+@media screen and (orientation: portrait) and (min-width: 42rem) {
+  #pdf-frame.ratio-A4,
+  #pdf-frame.ratio-16-9 {
+    width: 100%;
+    margin-left: 0;
     border: 0;
   }
 }
 
-a.pdf-goto-page {
-    cursor: pointer;
-}
-
-span.pdf-page-num {
-    color: lightslategray;
-    font-style: italic;
-}
-
-#pdf-table-of-contents {
-    max-height: 60vh;
-    overflow-y: scroll;
+@media screen and (orientation: portrait) and (max-width: 42rem) {
+  #pdf-frame.ratio-A4,
+  #pdf-frame.ratio-16-9 {
+    width: calc(100% + 2rem);
+    margin-left: calc(0px - 1rem);
+    border: 0;
+  }
 }
