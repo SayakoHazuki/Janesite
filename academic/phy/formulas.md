@@ -70,3 +70,13 @@ $$\eta:$$ Refractive index for the medium
 $$sin\hspace{0.5em}C = \frac{1}{\eta}$$<br/>$$sin\hspace{0.5em}C = \frac{1}{1.5}$$<br/>$$\hspace{2em}C = sin^{-1} \hspace{0.5em} \frac{1}{1.5}$$<br/>$$\hspace{2em}C = 41.8° \hspace{0.5em} (41.8103149°)$$
 </div>
 </div>
+
+<h2>14.5 Images Formed by Convex Lenses</h2>
+<h3>Magnification</h3>
+
+<LaTeX margin>
+  $$m = \frac{v\ (Image\ distance)}{u\ (Object\ distance)}\ \ \ OR\ \ \ m=\frac{Image\ height}{Object\ height}$$
+</LaTeX>
+<blockquote>
+<p>
+$$m:$$ Magnification</p>

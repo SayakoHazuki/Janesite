@@ -9,6 +9,8 @@ title: Physics Terms & Diagrams
 > 2. The angle of reflection is equal to the angle of incidence
 <h3>Diagram showing the reflection of a light ray
 <img class="showcase-media" src="/assets/i/reflection.svg" />
+<h3>Ray diagram showing how an observer sees an image C'D'</h3>
+<img class="showcase-media" src="/assets/i/reflection2.svg" />
 <h4>Regular Reflection</h4>
 <p>occurs when light falls on <strong>smooth surfaces</strong>. Clear images are formed.</p>
 <h4>Diffuse Reflection</h4>
@@ -20,7 +22,7 @@ title: Physics Terms & Diagrams
 3. <strong>image distance = object distance</strong>                                 <br/>
 4. It is a <strong>virtual image</strong>                                            <br/>
 </blockquote>
-<p class="remarks">laterally <span class="word-fam">adj.</span> <span class="desc">sideways; 橫向</span></p>
+<p class="remarks">laterally <span class="word-fam">adj.</span> <span class="desc">sideways; 橫向</span></p>       
 <h2>14.3 Refraction</h2>
 <h3>Refraction: Light passes from air to medium</h3>
 <img class="showcase-media" src="/assets/i/refraction.svg" />
